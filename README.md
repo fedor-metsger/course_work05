@@ -34,25 +34,39 @@
 - При выборе пункта **7** происходит выход из программы.
 
 ## Путеводитель по коду
-Кода разбит на модули: api, DB, vacancy.
+Кода разбит на модули: **api**, **DB**, **vacancy**.
 
-В модуле api находятся классы для работы с API сайта HeadHunter:
+В модуле [api](api) находятся классы для работы с API сайта HeadHunter:
 
-в файле api.py - абстрактный класс Engine, обозначающий необходимые методы для работы с API.
-в файле hh.py - класс HH, реализующий работу с API сайта HeadHunter.
+- в файле [api.py](api/api.py) - абстрактный класс
+[Engine](https://github.com/fedor-metsger/course_work05/blob/2c0f75072629f1d77c2fd453fa5e2448dfb14280/api/api.py#L6),
+обозначающий необходимые методы для работы с API.  
+- в файле [hh.py](api/hh.py) - класс
+[HH](https://github.com/fedor-metsger/course_work05/blob/2c0f75072629f1d77c2fd453fa5e2448dfb14280/api/hh.py#L9),
+реализующий работу с API сайта HeadHunter.
 
-В модуле DB в файле db_manager.py находится класс DBManager, служащий для работы с базой данных для сохранения и выборки загруженных с сайтов вакансий
+В модуле [DB](DB) в файле [db_manager.py](DB/db_manager.py) находится класс
+[DBManager](https://github.com/fedor-metsger/course_work05/blob/2c0f75072629f1d77c2fd453fa5e2448dfb14280/DB/db_manager.py#L4),
+служащий для работы с базой данных для сохранения и выборки загруженных с сайтов вакансий.
 
-В модуле vacancy находятся классы для работы с загруженнымы в память вакансиями:
+В модуле [vacancy](vacancy) находятся классы для работы с загруженнымы в память вакансиями:
 
-в файле vacancy.py - класс Vacancy, объединяющий общие методы работы с вакансиями.
-в файле hh.py - класс HHVacancy, реализующий работу с васансией HeadHunter.
+- в файле [vacancy.py](vacancy/vacancy.py) - класс
+[Vacancy](https://github.com/fedor-metsger/course_work05/blob/2c0f75072629f1d77c2fd453fa5e2448dfb14280/vacancy/vacancy.py#L3
+), объединяющий общие методы работы с вакансиями.
+- в файле [hh.py](vacancy/hh.py) - класс
+[HHVacancy](https://github.com/fedor-metsger/course_work05/blob/2c0f75072629f1d77c2fd453fa5e2448dfb14280/vacancy/hh.py#L4),
+реализующий работу с васансией HeadHunter.
 
-Так же в модуле vacancy.py реализован класс VacancyCollection, который реализует набор вакансий.
+Так же в файле [vacancy.py](vacancy/vacancy.py) реализован класс
+[VacancyCollection](https://github.com/fedor-metsger/course_work05/blob/2c0f75072629f1d77c2fd453fa5e2448dfb14280/vacancy/vacancy.py#L166),
+который реализует набор вакансий.
 
-В модуле utils реализованы вспомогательные функции.
+В модуле [utils](utils.py) реализованы вспомогательные функции.
 
-В модуле main, помимо функции main() реализовано главное меню программы.
+В модуле [main](main.py), в функции
+[main()](https://github.com/fedor-metsger/course_work05/blob/2c0f75072629f1d77c2fd453fa5e2448dfb14280/main.py#L26)
+реализовано главное меню программы.
 
 В коде применяются декораторы @staticmethod, @property, @abstractmethod.
 
