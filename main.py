@@ -6,7 +6,7 @@ import pandas as pd
 DB_CONNECTION_FILENAME = "db_config.txt"
 
 SELECTED_COMPANIES = ["4712518", "906391", "668994", "2000762", "1111946",
-                      "2136954", "1579449", "4743890", "115", "598471"]
+                      "2136954", "1276080", "4596113", "115", "598471"]
 
 def read_connection_data():
     """

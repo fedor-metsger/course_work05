@@ -54,7 +54,7 @@ class HH(Engine):
                     salary_to = i["salary"]["to"]
                     currency = i["salary"]["currency"]
 
-                    vac = HHVacancy(i["id"], i["name"], company, f'https://hh.ru/vacancy/{i["id"]}',
+                vac = HHVacancy(i["id"], i["name"], company, f'https://hh.ru/vacancy/{i["id"]}',
                                 descr, salary_from, salary_to, currency, company_id, self.site)
                 self.data.add_vacancy(vac)
                 count += 1
